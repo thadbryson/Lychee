@@ -94,7 +94,9 @@ class RSSController extends Controller
 				'summary' => $photo_model->description,
 				'updated' => $photo_model->created_at,
 				'link' => $photo['url'],
-				'enclosure' => $enclosure,
+				'enclosure' => $enclosure->url,
+				'enclosureLength' => $enclosure->length,
+				'enclosureType' => $enclosure->mime_type,
 				'author' => $photo_model->owner->username,
 			]);
 		});
