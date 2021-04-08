@@ -1,5 +1,7 @@
 <?php
 
+// UNUSED - removed so I can use this project in an <iframe>
+
 return [
 	/*
 	 * Server
